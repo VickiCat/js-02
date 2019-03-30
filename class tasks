@@ -1,0 +1,31 @@
+//http://www.codewars.com/kata/5721a78c283129e416000999?fbclid=IwAR3p9BKjQQIFdLimJtF3WDj7ursdLxH3d-uUoE0DCjQlDQ3Xjjy369LIV1o
+
+function pickIt(arr){
+  var odd=[],even=[];
+  //coding here
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      even.push(arr[i])
+    } else {
+      odd.push(arr[i])
+    }
+  }
+  return [odd,even];
+}
+
+
+//http://www.codewars.com/kata/57216d4bcdd71175d6000560?fbclid=IwAR3lPFmsF1heR7_lKnXDB9Rej0mLASig2ojTHtKuHb4Qc72i0_-WopktuRQ
+
+function padIt(str,n){
+  //coding here
+  var i=1;
+  while (i<=n) {
+    if (i % 2 == 1) {
+      str = "*" + str;
+    } else {
+      str = str + "*";
+    }
+    i++;
+  }
+  return str;
+}
